@@ -3,13 +3,14 @@
 Select2 3.4.1 packaged as a Servlet 3.0 plugin. With a couple of clojure/hiccup
 helpers.
 
-## Usage
 
-Dependencies:
+## Dependencies
 
 ```clojure
 [com.andrewmcveigh/plugin-select2 "0.1.0"]
 ```
+
+## Usage
 
 ```clojure
 > (require '[plugin-select2.core :as select2])
