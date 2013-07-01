@@ -11,5 +11,5 @@
         [:script {:src "/plugins/select2/select2.min.js"}]))
 
 (def js-debug
-  (list jquery/js
+  (list jquery/js-debug
         [:script {:src "/plugins/select2/select2.js"}]))

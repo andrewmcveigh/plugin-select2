@@ -12,11 +12,18 @@ Dependencies:
 ```
 
 ```clojure
-> (require '[plugin-select2 :as select2])
+> (require '[plugin-select2.core :as select2])
 
 > select2/css
+[:link {:href "/plugins/select2/select2.css", :rel "stylesheet"}]
+
 > select2/js
-> select2/js-debug ; non-minimized version
+([:script {:src "/plugins/jquery/js/jquery.min.js"}]
+ [:script {:src "/plugins/select2/select2.min.js"}])
+
+> select2/js-debug ; non-minimized version(s)
+([:script {:src "/plugins/jquery/js/jquery.js"}]
+ [:script {:src "/plugins/select2/select2.js"}])
 ```
 
 
